@@ -156,7 +156,7 @@ const DraganDrop: FC = () => {
 				gap: 2,
 				flexWrap: "wrap",
 			}}>
-			{drop?.map((item, index) => (
+			{drop?.map((item) => (
 				<BoxMuiTask
 					key={item.id}
 					// draggable
