@@ -13,12 +13,10 @@ export interface DropValue {
 
 export interface DropState {
 	drop: DropValue[];
-	data: {};
 }
 
 const initialState: DropState = {
 	drop: [],
-	data: {},
 };
 
 export const dragSlice = createSlice({
