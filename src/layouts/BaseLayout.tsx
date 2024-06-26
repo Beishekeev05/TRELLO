@@ -4,10 +4,14 @@ import Headers from "../components/Headers";
 
 const BaseLayout: FC = () => {
 	return (
-		<header>
-			<Headers />
-			<Outlet />
-		</header>
+		<>
+			<header>
+				<Headers />
+			</header>
+			<main>
+				<Outlet />
+			</main>
+		</>
 	);
 };
 
