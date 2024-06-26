@@ -63,12 +63,11 @@ export default HomePage;
 const BoxMuiHomePage = styled(Box)(() => ({
 	width: "1440px",
 	height: "92.8vh",
-	borderBottom: "1px solid black",
+	margin: "0 auto",
 }));
 const BoxMuiMainContent = styled(Box)(() => ({
 	width: "100%",
 	minHeight: "400px",
-	border: "1px solid black",
 }));
 const ButtonsBlock = styled("div")(() => ({
 	display: "flex",
