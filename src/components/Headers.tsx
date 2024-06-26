@@ -1,7 +1,7 @@
 import { FC } from "react";
 import AppsIcon from "@mui/icons-material/Apps";
 import { styled } from "@mui/material";
-import jira from "../assets/jira.svg";
+import jira from "../assets/jira.png";
 import SearchIcon from "@mui/icons-material/Search";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import NotificationsIcon from "@mui/icons-material/Notifications";
