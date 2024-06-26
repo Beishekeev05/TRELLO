@@ -10,6 +10,7 @@ import { useAppDispatch } from "../../utils/helpers/hooks";
 const CreateTodo: FC = () => {
 	const [openTextFeild, setOpenTextFeild] = useState(false);
 	const { register, handleSubmit, reset } = useForm<DropValue>();
+	
 	const onClose = () => setOpenTextFeild((prev) => !prev);
 	const dispatch = useAppDispatch();
 

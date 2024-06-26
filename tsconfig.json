@@ -20,6 +20,6 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true
 	},
-	"include": ["src", "src/pages/UI/ StatusFeilds.tsx"],
+	"include": ["src", "src/pages/HomePageUI/ StatusFeilds.tsx"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }

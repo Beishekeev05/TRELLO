@@ -1,8 +1,8 @@
 import { Box, Button, TextField, Typography, styled } from "@mui/material";
 import { FC, useState } from "react";
-import DataTable from "./UI/Table";
+import DataTable from "./HomePageUI/Table";
 import { SubmitHandler, useForm } from "react-hook-form";
-import Create from "./UI/Create";
+import Create from "./HomePageUI/Create";
 
 type FormType = {
 	search: string;
