@@ -139,7 +139,7 @@ const DraganDrop: FC = () => {
 				reorderIndrops({
 					sourceDropId: draggingItem.index,
 					destinationDropId: draggingOverItem.dropId,
-					sourceIndex: -1, // Поскольку это основной элемент, указываем -1
+					sourceIndex: -1,
 					destinationIndex: draggingOverItem.index,
 				})
 			);
@@ -224,15 +224,18 @@ const DraganDrop: FC = () => {
 								}
 								onDrop={handleDrop}>
 								{editIndropId !== indropItem.id ? (
-									<MenuItem
+									<div
 										onClick={() => toggleEdit(indropItem.id, item.id)}
-										sx={{ display: "flex", justifyContent: "space-between" }}>
-										<Typography>{indropItem.title}</Typography>
+										style={{
+											display: "flex",
+											justifyContent: "space-between",
+										}}>
+										<TypographyStyle>{indropItem.title}</TypographyStyle>
 										<Button
 											onClick={() => openDeleteModal(item.id, indropItem.id)}>
 											<MoreHorizIcon />
 										</Button>
-									</MenuItem>
+									</div>
 								) : (
 									<form onSubmit={handleSubmit(onSubmitEdit)}>
 										<TextField
@@ -335,4 +338,15 @@ const BoxMuiTask = styled(Box)({
 	display: "flex",
 	flexDirection: "column",
 	position: "relative",
+});
+
+const TypographyStyle = styled(Typography)({
+	backgroundColor: "#f1f1f1",
+	padding: 5,
+	width: "100%",
+	borderRadius: 4,
+	cursor: "pointer",
+	"&:hover": {
+		backgroundColor: "#ede8e8",
+	},
 });
